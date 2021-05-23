@@ -1,0 +1,174 @@
+body {
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+    max-width: 100%;
+    background-image: url("../img/back-day.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #FFF;
+    background-attachment: fixed;
+    justify-items: center;
+}
+.weatherwidget-io{
+    width:350px;
+    background-color:transparent;
+    color: #ffcd5c;
+}
+p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 120px;
+    text-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+#controls {
+    margin: 0 0 50px;
+}
+#spin, #reload {
+    border: 2px solid #ffff00;
+    padding: 10px 20px;
+    background-color: rgba(0,51,51,0.5);
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size:large;
+    font-family:"Comic Sans MS";
+    margin: 0 5px;
+}
+#spin:hover, #reload:hover {
+    border: 2px solid #FF3333;
+  }
+h1{
+    font-family: "Times New Roman",Times, serif;
+    font-size: 50px;
+    text-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    color: #FF3333;
+}
+#lista {
+    height: 70px;
+}
+.board {
+    max-width: 100%;
+    background-image: url("../img/octopusBoard.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    text-align: center;
+    height: 380px;
+    position: relative;
+}
+.winner {
+    padding: 0;
+    margin: 0;
+    padding-top: 25px;
+    font-size: 20px;
+    text-space: 2px;
+    color: #ffff00;
+}
+#result {
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*colocando estilo a botones dia y noche*/
+.wrapper{
+    height: 100%;
+    background-color:transparent;
+    background-size: cover;
+}
+.container-btn-mode{
+    position: absolute;
+    top:20px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 2;
+    font-size:0;
+}
+.btn-mode{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border:2px solid black;
+    transition: background-color .5s;
+}
+/* imagenes del sol y la luna*/
+.btn-mode i {
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    line-height: 30px;
+}
+.btn-mode.sun{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 1px solid transparent;
+}
+.btn-mode.moon{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.active{
+    background-color:black;
+    color:#ffcd5c
+}
+
+/*Estilo modo noche*/
+
+.dark-mode{
+    background-image: url("../img/back-night.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition:background-color .5s;
+}
+.dark-mode .card{
+    background-color: #1A1C1E;
+}
+/*desktop*/
+@media (min-width: 1025px){
+
+
+}
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .img-profile {
+        border-radius: 5%;
+    }
+    #lista {
+        height: 50px;
+        font-size: 15px;
+    }
+    .container-btn-mode{
+
+    }
+}
+/*Smartphone*/
+@media (min-width: 320px) and (max-width: 767px) {
+    h1 {
+        margin: 55px 0 18px;
+        font-size: 30px;
+   }
+    #lista {
+        font-size: 18px;
+        padding: 0;
+        line-height: 25px;
+        margin-bottom: 90px;
+    }
+    #spin, #reload {
+        margin-bottom: 10px;
+    }
+    .board {
+        padding:0;
+        background-position: top center;
+    }
+    #result{
+        text-align: center;
+        font-size: 20px;
+        width: auto;
+    }
+}
